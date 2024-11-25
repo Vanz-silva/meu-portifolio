@@ -1,21 +1,279 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0 !important;
+}
+
+.lista-horizontal ul {
+  display: inline-block;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "roboto", sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #080608 35%, #6610f2, #080608);
+}
+
+header {
+  background-color: transparent;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+h1 {
+  color: #fff;
+  font: normal normal 800 60px / 70px "Inter", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+h6 {
+  color: #fff;
+  margin-bottom: 0%;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ddd;
+}
+
+main {
+  padding: 20px;
+}
+
+p {
+  color: #fff;
+  line-height: 1.5;
+}
+
+#sessao-sobre-mim {
+  margin-top: 5%;
+}
+
+#sobre-mim {
+  color: #fff;
+  margin-top: 5%;
+}
+
+.txt-botao-conversar {
+  display: flex;
+  font-size: 18px;
+}
+
+.btn-colorido {
+  position: relative;
+  background: linear-gradient(
+    330deg,
+    #9dff71 0%,
+    #ffd88d 30%,
+    #ff76d5 65%,
+    #55beff 100%
+  );
+  border: none;
+  margin: 54px auto 62px auto;
+  padding: 0;
+  width: 254px;
+  height: 48px;
+  text-align: center;
+  color: #000;
+  display: block;
+  cursor: pointer;
+  border-radius: 24px;
+  font: normal bold normal 25px / 32px "Inter", sans-serif;
+}
+
+.btn-colorido ::after {
+  content: "Vamos Conversar";
+  text-align: center;
+  color: white;
+  background-color: #0d0d0e;
+  font: normal bold normal 18px / 18px "Inter", sans-serif;
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+  top: 3px;
+  left: 3px;
+  border-radius: 40px;
+  z-index: 5;
+  position: absolute;
+  display: block;
+  padding: 0px;
+}
+
+
+.btn-colorido:hover::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    330deg,
+    #9dff71 0%,
+    #ffd88d 30%,
+    #ff76d5 65%,
+    #55beff 100%
+  );
+  border-radius: 24px;
+  filter: blur(5px);
+  transition: all 0.2s ease-in-out;
+  z-index: -1;
+}
+
+.logos-tec {
+  margin-top: 16%;
+  margin-bottom: 16%;
+}
+
+.box-texto-logos {
+  color: #fff;
+  font-family: sans-serif;
+  padding-bottom: 5%;
+}
+
+#linha-logos {
+  padding-bottom: 5%;
+}
+
+.container-logo {
+  position: relative;
+}
+
+.box-logo {
+  top: 72%;
+  right: 50%;
+  animation-delay: 200ms;
+}
+
+#linha-projetos-1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+#linha-projetos-2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.portifolio-box {
+  display: flex; /* Habilita flexbox para as divs */
+  justify-content: space-between; /* Distribui espaço entre as divs */
+  align-items: flex-start; /* Alinha verticalmente no topo */
+
+  margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+.projeto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  width: 350px; /* Ajuste o tamanho da caixa conforme necessário */
+  height: 450px; /* Ajuste a altura da caixa conforme necessário */
+  position: relative;
+}
+
+.projeto img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 5px 5px 0 0; /* Arredonda os cantos superiores da imagem */
+}
+
+.projeto h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.projeto p {
+  margin-bottom: 10px;
+}
+
+.projeto a {
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: background-color 0.3s;
+  position: absolute;
+  bottom: 10px; /* Posicione o botão na parte inferior da caixa */
+  left: 50%; /* Posicione o botão no centro horizontal */
+  transform: translateX(-50%); /* Centralize o botão horizontalmente */
+}
+
+.projeto a:hover {
+  background-color: #444;
+}
+
+footer {
+  background-color: transparent;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #ddd;
 }
