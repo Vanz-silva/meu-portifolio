@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 const About = () => (
   <section id="sobremim">
     <div className="container-fluid text-center" id="sessao-sobre-mim">
-      <div className="row pb-5  mb-5 align-items-center">
+      <div className="row mb-5  mb-4 align-items-center">
         {/* Primeira coluna */}
         <div className="col-md-7 linha-cab">
           <div id="sobre-mim">
@@ -27,18 +27,20 @@ const About = () => (
           </div>
         </div>
       </div>
-      <div className="row pt-4 pb-4 mt-5 mb-5">
-        <div className="text-sobre">
-          <h1>Sobre mim</h1>
-          <h5>
-            Está buscando uma desenvolvedora front-end que transforme suas
-            ideias em experiências digitais incríveis? Eu sou a pessoa certa!
-            Com expertise em HTML, CSS, JavaScript, React, Next.js e Python,
-            crio interfaces web que combinam design atraente e funcionalidade.
-            Sempre em busca de inovação e desafios, entrego soluções de alta
-            qualidade, pensadas para proporcionar a melhor experiência para o
-            usuário. Vamos construir algo juntos?
-          </h5>
+      <div className="row pt-4 pb-5 mt-4 ">
+        <div className="box-sobre">
+          <div className="text-sobre pt-5 mt-5 gap-3 d-flex justify-content-center flex-column">
+            <h1>Sobre mim</h1>
+            <h5>
+              Está buscando uma desenvolvedora front-end que transforme suas
+              ideias em experiências digitais incríveis? Eu sou a pessoa certa!
+              Com expertise em HTML, CSS, JavaScript, React, Next.js e Python,
+              crio interfaces web que combinam design atraente e funcionalidade.
+              Sempre em busca de inovação e desafios, entrego soluções de alta
+              qualidade, pensadas para proporcionar a melhor experiência para o
+              usuário. Vamos construir algo juntos?
+            </h5>
+          </div>
         </div>
       </div>
     </div>

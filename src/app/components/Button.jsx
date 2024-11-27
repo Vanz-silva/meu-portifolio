@@ -1,10 +1,11 @@
 const Button = () => {
   return (
-    <div className="justify-content-center gap-3 d-flex pt-3">
+    <div className="justify-content-center gap-1 d-flex pt-3">
       <a
-        href="/cv-rhuanbello" // Caminho relativo ao arquivo dentro da pasta public
-        className="btn-colorido"
-        download // Permite que o navegador inicie o download ao clicar
+        href="/cv-rhuanbello"
+        className="btn-colorido bt-2"
+        download
+        data-content="Baixar CV"
       >
         <span className="txt-botao-conversar"></span>
       </a>
@@ -12,9 +13,10 @@ const Button = () => {
         href={`https://wa.me/5531999999999?text=${encodeURIComponent(
           "Olá, gostaria de saber mais sobre você!"
         )}`}
-        className="btn-colorido"
+        className="btn-colorido bt-1"
         target="_blank"
         rel="noopener noreferrer"
+        data-content="Vamos conversar"
       >
         <span className="txt-botao-conversar"></span>
       </a>
