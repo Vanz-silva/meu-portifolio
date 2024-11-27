@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
 * {
   margin: 0%;
   padding: 0%;
@@ -6,6 +8,14 @@
 
 a {
   text-decoration: none;
+}
+h5 {
+  font-family: sans-serif !important;
+  font-weight: 300 !important;
+}
+h1 {
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 600 !important;
 }
 
 ul {
@@ -18,7 +28,7 @@ ul {
 }
 
 body {
-  font-family: "roboto", sans-serif;
+  font-family: "Poppins", sans-serif !important;
   color: #fff;
   margin: 0;
   padding: 0;
@@ -91,7 +101,6 @@ p {
 
 #sobre-mim {
   color: #fff;
-  margin-top: 5%;
 }
 
 .txt-botao-conversar {
@@ -99,19 +108,23 @@ p {
   font-size: 18px;
 }
 
+#bt-c-1 {
+
+}
+
 .btn-colorido {
   position: relative;
   background: linear-gradient(
     330deg,
-    #9dff71 0%,
+    #6610f2 0%,
     #ffd88d 30%,
     #ff76d5 65%,
-    #55beff 100%
+    #6610f2 100%
   );
   border: none;
-  margin: 54px auto 62px auto;
+  margin: 12x;
   padding: 0;
-  width: 254px;
+  width: 174px;
   height: 48px;
   text-align: center;
   color: #000;
@@ -121,23 +134,27 @@ p {
   font: normal bold normal 25px / 32px "Inter", sans-serif;
 }
 
-.btn-colorido ::after {
+.btn-colorido ::before {
+  display: flex;
+  justify-content: center;
+  align-items: center !important;
   content: "Vamos Conversar";
   text-align: center;
   color: white;
   background-color: #0d0d0e;
-  font: normal bold normal 18px / 18px "Inter", sans-serif;
-  width: calc(100% - 6px);
-  height: calc(100% - 6px);
-  top: 3px;
-  left: 3px;
+  font-size: 14px;
+  font-family: sans-serif !important;
+  font-weight: 400 !important;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+  top: 2px;
+  left: 2px;
   border-radius: 40px;
   z-index: 5;
   position: absolute;
   display: block;
-  padding: 0px;
+  padding: 5px;
 }
-
 
 .btn-colorido:hover::after {
   content: "";
@@ -145,15 +162,20 @@ p {
   inset: 0;
   background: linear-gradient(
     330deg,
-    #9dff71 0%,
+    #6610f2 0%,
     #ffd88d 30%,
     #ff76d5 65%,
-    #55beff 100%
+    #6610f2 100%
   );
   border-radius: 24px;
   filter: blur(5px);
   transition: all 0.2s ease-in-out;
   z-index: -1;
+}
+
+.text-sobre {
+  padding-top: 2.5rem;
+  color: #fff;
 }
 
 .logos-tec {
@@ -277,3 +299,31 @@ footer a {
 footer a:hover {
   color: #ddd;
 }
+
+.circle {
+  width: 298px; /* Defina a largura */
+  height: 298px; /* Defina a altura igual à largura */
+  border-radius: 50%; /* Torna a div redonda */
+  background-color: #6610f2;
+  overflow: hidden; /* Garante que a imagem não ultrapasse os limites */
+  display: flex; /* Centraliza a imagem */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  border: 2px solid #000; /* Opcional: borda para destacar o círculo */
+}
+
+.circle img {
+  width: 100%; /* Ajusta a largura da imagem para preencher o círculo */
+  height: 100%; /* Ajusta a altura da imagem */
+  object-fit: cover; /* Garante que a imagem se adapte sem distorção */
+}
+
+.linha-cab {
+  margin-top: 2rem !important;
+  align-items: center !important;
+  display: flex !important;
+  flex-direction: column !important;
+  padding: 0 !important;
+}
+
+

@@ -3,19 +3,42 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const About = () => (
   <section id="sobremim">
-    <div className="container text-center" id="sessao-sobre-mim">
-      <div className="colunm align-items-center">
-        <div className="col">
+    <div className="container-fluid text-center" id="sessao-sobre-mim">
+      <div className="row pb-5  mb-5 align-items-center">
+        {/* Primeira coluna */}
+        <div className="col-md-7 linha-cab">
           <div id="sobre-mim">
-            <h1>Olá Eu sou Dev Front-End</h1>
-            <div>
-              <h6>Sou um desenvolvedor web freelancer...</h6>
-              <h6>Tenho um bom conhecimento de design...</h6>
+            <h1>Olá, Eu sou a Vanessa Silva </h1>
+            <div className="p-1">
+              <h5>Desenvolvedora Front-End</h5>
             </div>
           </div>
-        </div>
-        <div className="col">
           <Button text="Vamos Conversar" />
+        </div>
+        {/* Segunda coluna */}
+        <div className="col-md-5 justify-content-center d-flex">
+          <div className="circle">
+            <img
+              src="/img/animeVanz.png"
+              width="60%"
+              alt="Descrição da imagem"
+              className="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+      <div className="row pt-4 pb-4 mt-5 mb-5">
+        <div className="text-sobre">
+          <h1>Sobre mim</h1>
+          <h5>
+            Está buscando uma desenvolvedora front-end que transforme suas
+            ideias em experiências digitais incríveis? Eu sou a pessoa certa!
+            Com expertise em HTML, CSS, JavaScript, React, Next.js e Python,
+            crio interfaces web que combinam design atraente e funcionalidade.
+            Sempre em busca de inovação e desafios, entrego soluções de alta
+            qualidade, pensadas para proporcionar a melhor experiência para o
+            usuário. Vamos construir algo juntos?
+          </h5>
         </div>
       </div>
     </div>
