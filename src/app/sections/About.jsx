@@ -30,15 +30,15 @@ const About = () => (
       <div className="row pt-4 pb-5 mt-4 ">
         <div className="box-sobre">
           <div className="text-sobre pt-5 mt-5 gap-3 d-flex justify-content-center flex-column">
-            <h1>Sobre mim</h1>
+            <h2>Sobre mim</h2>
             <h5>
               Está buscando uma desenvolvedora front-end que transforme suas
               ideias em experiências digitais incríveis? Eu sou a pessoa certa!
-              Com expertise em HTML, CSS, JavaScript, React, Next.js e Python,
-              crio interfaces web que combinam design atraente e funcionalidade.
-              Sempre em busca de inovação e desafios, entrego soluções de alta
-              qualidade, pensadas para proporcionar a melhor experiência para o
-              usuário. Vamos construir algo juntos?
+              Com expertise em HTML, CSS, JavaScript, React, Next.js, Python,
+              Material iu e Bootstrap crio interfaces web que combinam design
+              atraente e funcionalidade. Sempre em busca de inovação e desafios,
+              pensadas para proporcionar a melhor experiência para o usuário.
+              Vamos construir algo juntos?
             </h5>
           </div>
         </div>

@@ -148,7 +148,6 @@ p {
   border-radius: 40px;
   z-index: 5;
   position: absolute;
-  
 }
 
 .btn-colorido:hover::after {
@@ -175,8 +174,39 @@ p {
   color: #fff;
 }
 
+.skill-logo {
+  position: relative; /* Necessário para o pseudo-elemento */
+  z-index: 1; /* Garante que a logo fique acima do gradiente */
+}
+
+.skill-logo::before {
+  content: ""; /* Cria o pseudo-elemento */
+  position: absolute;
+  top: -15px; /* Ajusta o tamanho do brilho */
+  left: -15px;
+  right: -15px;
+  bottom: -15px;
+  border-radius: 50%; /* Faz o brilho acompanhar o formato circular */
+  background: linear-gradient(
+    330deg,
+    #6610f2 0%,
+    #ffd88d 30%,
+    #ff76d5 65%,
+    #6610f2 100%
+  ); /* Aplica o gradiente */
+  filter: blur(10px); /* Adiciona o efeito de desfoque */
+  z-index: -1; /* Coloca o gradiente atrás da logo */
+  opacity: 0; /* Inicialmente invisível */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Transição suave */
+}
+
+.skill-logo:hover::before {
+  opacity: 1; /* Faz o gradiente aparecer no hover */
+  transform: scale(1.2); /* Expande levemente o gradiente no hover */
+}
+
 .text-sobre {
-width: 50%;
+  width: 50%;
 }
 
 .logos-tec {
@@ -194,14 +224,19 @@ width: 50%;
   padding-bottom: 5%;
 }
 
-.container-logo {
-  position: relative;
-}
+
 
 .box-logo {
+  width: 100%;
   top: 72%;
   right: 50%;
   animation-delay: 200ms;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
+  
+}
+
+.box-logo:hover {
+  transform: scale(1.2); /* Aumenta o tamanho no hover */
 }
 
 #linha-projetos-1 {
@@ -302,15 +337,16 @@ footer a:hover {
 }
 
 .circle {
-  width: 298px; /* Defina a largura */
-  height: 298px; /* Defina a altura igual à largura */
-  border-radius: 50%; /* Torna a div redonda */
+  width: 298px; 
+  height: 298px; 
+  margin-top: 24px;
+  border-radius: 50%; 
   background-color: #6610f2;
   overflow: hidden; /* Garante que a imagem não ultrapasse os limites */
-  display: flex; /* Centraliza a imagem */
-  justify-content: center; /* Centraliza horizontalmente */
-  align-items: center; /* Centraliza verticalmente */
-  border: 2px solid #000; /* Opcional: borda para destacar o círculo */
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  border: 2px solid #000; 
 }
 
 .circle img {
