@@ -224,15 +224,12 @@ p {
   padding-bottom: 5%;
 }
 
-
-
 .box-logo {
   width: 100%;
   top: 72%;
   right: 50%;
   animation-delay: 200ms;
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
-  
 }
 
 .box-logo:hover {
@@ -247,6 +244,26 @@ p {
 #linha-projetos-2 {
   display: flex;
   justify-content: space-between;
+}
+
+.logo-container {
+  position: relative; /* Necessário para o uso de ::after */
+  display: inline-block; /* Para ajustar ao conteúdo */
+}
+
+.logo-container::after {
+  content: "";
+  position: absolute;
+  bottom: -12px; /* Ajuste conforme necessário */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%; /* Proporção da sombra em relação ao elemento */
+  height: 10px; /* Altura da sombra */
+  background: rgba(0, 0, 0, 0.4); /* Cor da sombra */
+  filter: blur(8px); /* Suaviza a sombra */
+  z-index: -1; /* Coloca a sombra atrás da logo */
+  border-radius: 50%; /* Faz a sombra oval */
+  pointer-events: none; /* Evita interferências ao clicar */
 }
 
 .portifolio-box {
@@ -337,16 +354,16 @@ footer a:hover {
 }
 
 .circle {
-  width: 298px; 
-  height: 298px; 
+  width: 298px;
+  height: 298px;
   margin-top: 24px;
-  border-radius: 50%; 
+  border-radius: 50%;
   background-color: #6610f2;
   overflow: hidden; /* Garante que a imagem não ultrapasse os limites */
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
-  border: 2px solid #000; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #000;
 }
 
 .circle img {
