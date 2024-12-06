@@ -50,6 +50,7 @@ h1 {
 }
 
 h2 {
+  color: #fff !important;
   font-size: 24px;
   font-weight: 400;
   margin-bottom: 20px;
@@ -274,53 +275,38 @@ p {
   margin: 0 auto; /* Centraliza horizontalmente */
 }
 
-.projeto {
+#carouselSkills {
+  padding-bottom: 5%;
+}
+
+.box-projeto {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-  width: 350px; /* Ajuste o tamanho da caixa conforme necessário */
-  height: 450px; /* Ajuste a altura da caixa conforme necessário */
+  background-color: #f1e6ff;
+  transition: transform 0.5s ease-in-out, border 0.5s ease-in-out;
   position: relative;
+  padding: 0 !important;
 }
 
-.projeto img {
+.box-projeto img {
   width: 100%;
-  height: 200px;
   object-fit: cover;
-  margin-bottom: 10px;
-  border-radius: 5px 5px 0 0; /* Arredonda os cantos superiores da imagem */
+}
+.box-projeto:hover {
+  border: 0.2px solid #6610f2; /* Mostra a borda */
+  transform: translateY(-20px); /* Efeito de fade-up */
 }
 
-.projeto h3 {
-  font-size: 18px;
-  font-weight: 500;
-  margin-bottom: 5px;
+.txt-magmeta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .projeto p {
   margin-bottom: 10px;
-}
-
-.projeto a {
-  display: inline-block;
-  padding: 8px 15px;
-  background-color: #333;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 3px;
-  transition: background-color 0.3s;
-  position: absolute;
-  bottom: 10px; /* Posicione o botão na parte inferior da caixa */
-  left: 50%; /* Posicione o botão no centro horizontal */
-  transform: translateX(-50%); /* Centralize o botão horizontalmente */
-}
-
-.projeto a:hover {
-  background-color: #444;
 }
 
 footer {
