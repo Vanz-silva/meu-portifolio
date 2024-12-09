@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 const About = () => (
   <section id="sobremim">
     <div className="container-fluid text-center" id="sessao-sobre-mim">
-      <div className="row mb-5  mb-4 align-items-center">
+      <div className="row mb-md-5  mt-5 align-items-center">
         {/* Primeira coluna */}
         <div className="col-md-7 linha-cab">
           <div id="sobre-mim">
@@ -27,7 +27,7 @@ const About = () => (
           </div>
         </div>
       </div>
-      <div className="row pt-4 pb-5 mt-4 ">
+      <div className="row pt-md-5 pb-md-5 mt-md-5 mb-md-5 ">
         <div className="box-sobre">
           <div className="text-sobre pt-5 mt-5 gap-3 d-flex justify-content-center flex-column">
             <h1>Sobre mim</h1>
