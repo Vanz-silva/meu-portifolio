@@ -212,13 +212,15 @@ p {
 }
 
 .logos-tec {
-  margin-top: 8%;
-  margin-bottom: 16%;
+  margin-top: 14%;
+  margin-bottom: 14%;
 }
 
 .box-texto-logos {
   color: #fff;
   font-family: sans-serif;
+  margin-top: 3rem !important;
+  margin-bottom: 3rem !important;
   padding-bottom: 5%;
 }
 
@@ -304,6 +306,10 @@ p {
 
 .projeto p {
   margin-bottom: 10px;
+}
+
+.swiper-pagination {
+  display: none !important;
 }
 
 footer {

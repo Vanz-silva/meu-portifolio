@@ -1,3 +1,4 @@
+"use client";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const Projects = () => (
@@ -9,7 +10,7 @@ const Projects = () => (
     </div>
 
     <div className="container d-flex justify-content-center flex-column portifolio-box">
-      <div className="row pt-5">
+      <div className="row pt-md-5 mb-md-5 pb-md-5 ">
         <div className="col-md-6 col-sm-12 d-flex texto justify-content-center">
           <div className="txt-magmeta ">
             <h1>
@@ -32,7 +33,7 @@ const Projects = () => (
           </div>
         </div>
       </div>
-      <div className="row pt-5">
+      <div className="row pt-md-5 mt-md-5 pb-md-5 mb-dm-5">
         <div className="col-md-7 col-sm-12 box-projeto">
           <img src="/img/mockup-pc3.svg" alt="Descrição da Imagem" />
         </div>

@@ -1,8 +1,13 @@
-"use client"; // Diretiva para habilitar o uso de client-side
+"use client";
 
-import SkillCard from "../components/SkillCard"; // Mantido o import original
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper/modules"; // Importação correta para v11+
+import SkillCard from "../components/SkillCard";
+import "swiper/css";
+import "swiper/css/autoplay";
+import "swiper/css/pagination";
 import "bootstrap/dist/css/bootstrap.min.css"; // Estilos do Bootstrap
-import "bootstrap/dist/js/bootstrap.bundle.min.js"; // JS do Bootstrap para o carrossel
 
 const Skills = () => {
   return (
@@ -12,68 +17,30 @@ const Skills = () => {
           <h2>Skills</h2>
         </div>
 
-        {/* Carrossel do Bootstrap */}
-        <div
-          id="carouselSkills"
-          className="carousel slide"
-          data-bs-ride="carousel"
+        <Swiper
+          modules={[Autoplay, Pagination]} // Registro explícito dos módulos
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+          }}
+          pagination={{ clickable: true }}
+          loop={true}
+          spaceBetween={20}
+          slidesPerView={3}
+          breakpoints={{
+            768: { slidesPerView: 4 },
+            1024: { slidesPerView: 5
+             },
+          }}
+          className="row box-texto-logos" 
         >
-          <div className="carousel-inner">
-            {/* Primeira Slide */}
-            <div className="carousel-item active">
-              <div className="row justify-content-center">
-                <div className="col-3 logo-container">
-                  <SkillCard src="/img/logoHtml.png" alt="HTML" />
-                </div>
-                <div className="col-3 logo-container">
-                  <SkillCard src="/img/logoHtml.png" alt="HTML" />
-                </div>
-                <div className="col-3 logo-container">
-                  <SkillCard src="/img/logoHtml.png" alt="HTML" />
-                </div>
-                <div className="col-3 logo-container">
-                  <SkillCard src="/img/logoHtml.png" alt="HTML" />
-                </div>
-              </div>
-            </div>
-
-            {/* Segunda Slide */}
-            <div className="carousel-item">
-              <div className="row justify-content-center">
-                <div className="col-3 logo-container">
-                  <SkillCard src="/img/logoHtml.png" alt="HTML" />
-                </div>
-                <div className="col-3 logo-container">
-                  <SkillCard src="/img/logoHtml.png" alt="HTML" />
-                </div>
-                <div className="col-3 logo-container">
-                  <SkillCard src="/img/logoHtml.png" alt="HTML" />
-                </div>
-                <div className="col-3 logo-container">
-                  <SkillCard src="/img/logoHtml.png" alt="HTML" />
-                </div>
-              </div>
-            </div>
-
-            {/* Terceira Slide */}
-            <div className="carousel-item">
-              <div className="row justify-content-center">
-                <div className="col-3 logo-container">
-                  <SkillCard src="/img/logoHtml.png" alt="HTML" />
-                </div>
-                <div className="col-3 logo-container">
-                  <SkillCard src="/img/logoHtml.png" alt="HTML" />
-                </div>
-                <div className="col-3 logo-container">
-                  <SkillCard src="/img/logoHtml.png" alt="HTML" />
-                </div>
-                <div className="col-3 logo-container">
-                  <SkillCard src="/img/logoHtml.png" alt="HTML" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+          {/* Adicionando slides */}
+          {[...Array(12)].map((_, index) => (
+            <SwiperSlide key={index} className="col-3 logo-container">
+              <SkillCard src={`/img/logoHtml.png`} alt={`Skill ${index + 1}`} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </section>
   );
