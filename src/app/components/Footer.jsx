@@ -1,13 +1,35 @@
+import * as Icon from "react-bootstrap-icons";
+
 const Footer = () => (
-    <footer>
-      <p>&copy; 2024 Vanessa Silva</p>
-      <ul>
-        <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
-        <li><a href="#"><i className="fab fa-twitter"></i></a></li>
-        <li><a href="#"><i className="fab fa-linkedin-in"></i></a></li>
-        <li><a href="#"><i className="fab fa-instagram"></i></a></li>
-      </ul>
-    </footer>
-  );
-  
-  export default Footer;
+  <footer>
+    <div className="container-fluid pt-5 container-footer justify-content-center d-flex align-items-center">
+      <div className="row ">
+        <div className="col-md-12 col-sm-12 pb-5">
+          <ul>
+            <li>
+              <a href="#">
+                <Icon.TelephoneFill size={24} className="ml-5" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <Icon.Linkedin size={24} className="ml-5" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <Icon.Github size={25} className="ml-5" />
+              </a>
+            </li>
+          </ul>
+
+          <p className="pt-4">
+            © Todos os direitos reservados 2024 Vanessa Silva
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+);
+
+export default Footer;

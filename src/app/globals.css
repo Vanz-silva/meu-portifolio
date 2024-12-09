@@ -32,7 +32,7 @@ body {
   color: #fff;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to bottom, #080608 32%, #6610f2, #080608);
+  background: linear-gradient(to bottom, #080608 32%, #6610f2,  #080608);
 }
 
 header {
@@ -310,6 +310,11 @@ p {
 
 .swiper-pagination {
   display: none !important;
+}
+
+.container-footer {
+  margin-top: 14%;
+  
 }
 
 footer {

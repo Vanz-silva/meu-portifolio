@@ -2,7 +2,7 @@ const Button = () => {
   return (
     <div className="justify-content-center gap-1 d-flex pt-3">
       <a
-        href="/cv-rhuanbello"
+        href="/VanessaCvDev.pdf"
         className="btn-colorido bt-2"
         download
         data-content="Baixar CV"
