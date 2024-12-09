@@ -8,37 +8,48 @@ const Projects = () => (
       </div>
     </div>
 
-    <div className="container d-flex justify-content-center portifolio-box">
+    <div className="container d-flex justify-content-center flex-column portifolio-box">
       <div className="row pt-5">
-        <div className="col-6 d-flex texto">
-          <div className="txt-magmeta">
-            <h2>Título do Texto</h2>
+        <div className="col-md-6 col-sm-12 d-flex texto justify-content-center">
+          <div className="txt-magmeta ">
+            <h1>
+              Apresentando o site da Magmenta: moderno, funcional e estratégico!
+            </h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed
-              magna...
+              🌟 Desenvolvido com HTML5, CSS3 e JavaScript, este site
+              empresarial foi criado para captar clientes e apresentar os
+              produtos da empresa de forma clara e profissional. Com design
+              responsivo, adapta-se a qualquer dispositivo, garantindo uma
+              navegação fluida e acessível. Funcionalidades interativas e um
+              layout alinhado à identidade visual reforçam a credibilidade e
+              posicionam a Magmenta como referência no mercado!  🚀
             </p>
           </div>
         </div>
-        <div className="col-6 box-projeto">
-          <img
-            src="/img/siteMagmeta.png"
-            alt="Descrição da Imagem"
-            width="50%"
-          />
+        <div className="col-md-6 col-sm-12 box-projeto">
+          <div className="justify-content-end d-flex box-mockup-img">
+            <img src="/img/mockup-celu.svg" alt="Descrição da Imagem" />
+          </div>
         </div>
-        <div className="col-6 box-projeto">
-          <img
-            src="/img/siteMagmeta.png"
-            alt="Descrição da Imagem"
-            width="50%"
-          />
+      </div>
+      <div className="row pt-5">
+        <div className="col-md-7 col-sm-12 box-projeto">
+          <img src="/img/mockup-pc3.svg" alt="Descrição da Imagem" />
         </div>
-        <div className="col-6 d-flex texto">
-          <div className="txt-magmeta">
-            <h2>Título do Texto</h2>
+        <div className="col-md-5 col-sm-12 d-flex texto">
+          <div className="txt-magmeta text-center">
+            <h2>
+              Apresentando o site da Magmenta: moderno, funcional e estratégico!
+            </h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed
-              magna...
+              🌟 Desenvolvido com HTML5, CSS3 e JavaScript, este site
+              empresarial foi criado para captar clientes e apresentar os
+              produtos da empresa de forma clara e profissional. Com design
+              responsivo, adapta-se a qualquer dispositivo, garantindo uma
+              navegação fluida e acessível. Funcionalidades interativas e um
+              layout alinhado à identidade visual reforçam a credibilidade e
+              posicionam a Magmenta como referência no mercado. Um projeto que
+              une tecnologia e estratégia para resultados reais! 🚀
             </p>
           </div>
         </div>

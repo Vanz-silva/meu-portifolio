@@ -30,7 +30,7 @@ const About = () => (
       <div className="row pt-4 pb-5 mt-4 ">
         <div className="box-sobre">
           <div className="text-sobre pt-5 mt-5 gap-3 d-flex justify-content-center flex-column">
-            <h2>Sobre mim</h2>
+            <h1>Sobre mim</h1>
             <h5>
               Está buscando uma desenvolvedora front-end que transforme suas
               ideias em experiências digitais incríveis? Eu sou a pessoa certa!

@@ -43,7 +43,7 @@ header {
 }
 
 h1 {
-  color: #fff;
+  color: #fff !important;
   font: normal normal 800 60px / 70px "Inter", sans-serif;
   font-size: 48px;
   font-weight: 400;
@@ -57,10 +57,11 @@ h2 {
 }
 
 h6 {
-  color: #fff;
+  color: #fff !important;
   margin-bottom: 0%;
   font-weight: 600;
   line-height: 1.5;
+  font-size: 20px !important;
 }
 
 nav ul {
@@ -283,7 +284,6 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #f1e6ff;
   transition: transform 0.5s ease-in-out, border 0.5s ease-in-out;
   position: relative;
   padding: 0 !important;
@@ -293,10 +293,7 @@ p {
   width: 100%;
   object-fit: cover;
 }
-.box-projeto:hover {
-  border: 0.2px solid #6610f2; /* Mostra a borda */
-  transform: translateY(-20px); /* Efeito de fade-up */
-}
+
 
 .txt-magmeta {
   display: flex;
