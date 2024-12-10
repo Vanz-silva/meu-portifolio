@@ -22,6 +22,7 @@ const Skills = () => {
     { src: "/img/logoPython.png", alt: "Python" },
     { src: "/img/logoGithub.png", alt: "Git" },
     { src: "/img/logoFigma.png", alt: "Git" },
+    { src: "/img/logoSql.png", alt: "Git" },
     
   ];
 
