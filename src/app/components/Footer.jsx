@@ -24,7 +24,7 @@ const Footer = () => (
           </ul>
 
           <p className="pt-4">
-            © Todos os direitos reservados 2024 Vanessa Silva
+            © Todos os direitos reservados 2024<br></br> Vanessa Silva
           </p>
         </div>
       </div>

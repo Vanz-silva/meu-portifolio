@@ -32,7 +32,7 @@ body {
   color: #fff;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to bottom, #080608 32%, #6610f2,  #080608);
+  background: linear-gradient(to bottom, #080608 32%, #6610f2, #080608);
 }
 
 header {
@@ -296,7 +296,6 @@ p {
   object-fit: cover;
 }
 
-
 .txt-magmeta {
   display: flex;
   flex-direction: column;
@@ -314,7 +313,6 @@ p {
 
 .container-footer {
   margin-top: 14%;
-  
 }
 
 footer {
@@ -372,4 +370,20 @@ footer a:hover {
   display: flex !important;
   flex-direction: column !important;
   padding: 0 !important;
+}
+
+@media (min-width: 230px) and (max-width: 1000px) {
+  .box-perfil {
+    margin-top: 4rem !important;
+  }
+
+  #habilidades {
+    margin-top: 8rem !important; 
+  }
+
+  .text-sobre {
+    width: 100% !important;
+  }
+    
+  
 }

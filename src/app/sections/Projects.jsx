@@ -12,7 +12,7 @@ const Projects = () => (
     <div className="container d-flex justify-content-center flex-column portifolio-box">
       <div className="row pt-md-5 mb-md-5 pb-md-5 ">
         <div className="col-md-6 col-sm-12 d-flex texto justify-content-center">
-          <div className="txt-magmeta ">
+          <div className="txt-magmeta  text-center ">
             <h1>
               Apresentando o site da Magmenta: moderno, funcional e estratégico!
             </h1>

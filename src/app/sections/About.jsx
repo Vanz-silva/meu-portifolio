@@ -16,7 +16,7 @@ const About = () => (
           <Button text="Vamos Conversar" />
         </div>
         {/* Segunda coluna */}
-        <div className="col-md-5 justify-content-center d-flex">
+        <div className="col-md-5 justify-content-center d-flex box-perfil">
           <div className="circle">
             <img
               src="/img/animeVanz.png"
@@ -27,9 +27,9 @@ const About = () => (
           </div>
         </div>
       </div>
-      <div className="row pt-md-5 pb-md-5 mt-md-5 mb-md-5 ">
+      <div className="row pt-md-5 pb-md-5 mt-md-5 mb-md-5  linha-sobre">
         <div className="box-sobre">
-          <div className="text-sobre pt-5 mt-5 gap-3 d-flex justify-content-center flex-column">
+          <div className="text-sobre pt-md-5 mt-md-5  mt-sm-3 gap-3 d-flex justify-content-center flex-column">
             <h1>Sobre mim</h1>
             <h5>
               Está buscando uma desenvolvedora front-end que transforme suas
