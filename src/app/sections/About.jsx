@@ -2,7 +2,7 @@ import Button from "../components/Button";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const About = () => (
-  <section id="sobremim">
+  <section id="about">
     <div className="container-fluid text-center" id="sessao-sobre-mim">
       <div className="row mb-md-5  mt-5 align-items-center">
         {/* Primeira coluna */}

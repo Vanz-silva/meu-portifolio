@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
 }
@@ -14,6 +18,7 @@ h5 {
   font-weight: 300 !important;
 }
 h1 {
+  color: #fff !important;
   font-family: "Poppins", sans-serif !important;
   font-weight: 600 !important;
 }
@@ -216,6 +221,20 @@ p {
   margin-bottom: 14%;
 }
 
+.text-sobre {
+  background: linear-gradient(
+    330deg,
+    #6610f2 10%,
+    #ffd88d 30%,
+    #ff76d5 65%,
+    #6610f2 90%
+  );
+  -webkit-background-clip: text; /* Para navegadores baseados no Webkit */
+  -webkit-text-fill-color: transparent; /* Faz o preenchimento do texto transparente */
+  background-clip: text; /* Compatibilidade adicional */
+  text-fill-color: transparent; /* Compatibilidade adicional */
+}
+
 .box-texto-logos {
   color: #fff;
   font-family: sans-serif;
@@ -378,12 +397,10 @@ footer a:hover {
   }
 
   #habilidades {
-    margin-top: 8rem !important; 
+    margin-top: 8rem !important;
   }
 
   .text-sobre {
     width: 100% !important;
   }
-    
-  
 }

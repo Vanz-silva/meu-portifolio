@@ -2,7 +2,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const Projects = () => (
-  <section id="projetos" className="pt-5 mt-5" data-aos="fade-down-right">
+  <section id="projects" className="pt-5 mt-5" data-aos="fade-down-right">
     <div className="container d-flex  justify-content-center pb-5">
       <div className="row d-flex">
         <h2> Projetos</h2>

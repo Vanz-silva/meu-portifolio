@@ -17,7 +17,13 @@ function Header() {
             <a href="#projects">Projetos</a>
           </li>
           <li>
-            <a href="#contact">Contato</a>
+            <a
+              href="https://api.whatsapp.com/send?phone=619921937866&text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20você."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Contato
+            </a>
           </li>
         </ul>
       </nav>

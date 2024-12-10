@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "bootstrap": "5.3",
-    "framer-motion": "^11.13.3",
     "lottie-react": "^2.4.0",
     "next": "^15.0.4-canary.48",
     "react": "^18.2.0",
