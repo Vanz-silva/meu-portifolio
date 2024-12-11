@@ -9,7 +9,10 @@ const Projects = () => (
       </div>
     </div>
 
-    <div className="container d-flex justify-content-center flex-column portifolio-box">
+    <div
+      className="container d-flex d-none d-md-block justify-content-center flex-column portifolio-box"
+      id="portifolio-desktop"
+    >
       <div className="row pt-md-5 mb-md-5 pb-md-5 ">
         <div className="col-md-6 col-sm-12 d-flex texto justify-content-center">
           <div className="txt-magmeta  text-center ">
@@ -23,7 +26,7 @@ const Projects = () => (
               responsivo, adapta-se a qualquer dispositivo, garantindo uma
               navegação fluida e acessível. Funcionalidades interativas e um
               layout alinhado à identidade visual reforçam a credibilidade e
-              posicionam a Magmenta como referência no mercado!  🚀
+              posicionam a Magmenta como referência no mercado! 🚀
             </p>
           </div>
         </div>
@@ -54,6 +57,76 @@ const Projects = () => (
             </p>
           </div>
         </div>
+      </div>
+    </div>
+
+    <div
+      className="container d-flex justify-content-center flex-column d-md-none portifolio-box"
+      id="portifolio-mobile"
+    >
+      <div className="row  mb-5 pb-5 ">
+        <div className="col-md-6 col-sm-12 d-flex texto justify-content-center">
+          <div className="txt-magmeta  text-center ">
+            <h1>
+              Apresentando o site da Magmenta: moderno, funcional e estratégico!
+            </h1>
+            <p>
+              🌟 Desenvolvido com HTML5, CSS3 e JavaScript, este site
+              empresarial foi criado para captar clientes e apresentar os
+              produtos da empresa de forma clara e profissional. Com design
+              responsivo, adapta-se a qualquer dispositivo, garantindo uma
+              navegação fluida e acessível. Funcionalidades interativas e um
+              layout alinhado à identidade visual reforçam a credibilidade e
+              posicionam a Magmenta como referência no mercado! 🚀
+            </p>
+          </div>
+        </div>
+        <div className="col-md-6 col-sm-12 box-projeto">
+          <div className="justify-content-end d-flex box-mockup-img">
+            <img src="/img/mockup-cel-mobile.svg" alt="Descrição da Imagem" />
+          </div>
+        </div>
+      </div>
+      <div className="row pt-5 mt-5 pb-5 mb-dm-5">
+        <div className="col-md-5 col-sm-12 d-flex texto">
+          <div className="txt-magmeta text-center">
+            <h2>
+              Apresentando o site da Magmenta: moderno, funcional e estratégico!
+            </h2>
+            <p>
+              🌟 Desenvolvido com HTML5, CSS3 e JavaScript, este site
+              empresarial foi criado para captar clientes e apresentar os
+              produtos da empresa de forma clara e profissional. Com design
+              responsivo, adapta-se a qualquer dispositivo, garantindo uma
+              navegação fluida e acessível. Funcionalidades interativas e um
+              layout alinhado à identidade visual reforçam a credibilidade e
+              posicionam a Magmenta como referência no mercado. Um projeto que
+              une tecnologia e estratégia para resultados reais! 🚀
+            </p>
+          </div>
+        </div>
+        <div className="col-md-7 col-sm-12 box-projeto">
+          <img src="/img/mockup-pc-mobile.svg" alt="Descrição da Imagem" />
+        </div>
+      </div>
+    </div>
+
+    <div className="row d-flex justify-content-between flex-colunm align-items-center">
+      <div className="col-6">
+        <div className="circle circle2">
+          <img
+            src="/img/cyberVanz2.png"
+            width="60%"
+            alt="Descrição da imagem"
+            className="img-fluid"
+          />
+        </div>
+      </div>
+      <div className="col-6">
+        <h1>
+          Conheça mais sobre meu trabalho entre em contato! Vamos conversar?!
+          
+        </h1>
       </div>
     </div>
   </section>

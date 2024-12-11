@@ -8,7 +8,7 @@ const About = () => (
         {/* Primeira coluna */}
         <div className="col-md-7 linha-cab">
           <div id="sobre-mim">
-            <h1>Olá, Eu sou a Vanessa Silva </h1>
+            <h1 className="text-colorido">Olá, Eu sou a Vanessa Silva </h1>
             <div className="p-1">
               <h5>Desenvolvedora Front-End</h5>
             </div>
@@ -19,7 +19,7 @@ const About = () => (
         <div className="col-md-5 justify-content-center d-flex box-perfil">
           <div className="circle">
             <img
-              src="/img/animeVanz.png"
+              src="/img/cyberVanz.png"
               width="60%"
               alt="Descrição da imagem"
               className="img-fluid"
