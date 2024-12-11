@@ -34,7 +34,7 @@ const About = () => (
             <h5>
               Está buscando uma desenvolvedora front-end que transforme suas
               ideias em experiências digitais incríveis? Eu sou a pessoa certa!
-              Com expertise em HTML, CSS, JavaScript, React, Next.js, Python,
+              Apaixonada por programação há dois anos, tenho expertise em HTML, CSS, JavaScript, React, Next.js, Python,
               Material iu e Bootstrap crio interfaces web que combinam design
               atraente e funcionalidade. Sempre em busca de inovação e desafios,
               pensadas para proporcionar a melhor experiência para o usuário.

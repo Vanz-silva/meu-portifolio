@@ -10,6 +10,12 @@ html {
   scroll-behavior: smooth;
 }
 
+header {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
 a {
   text-decoration: none;
 }
@@ -65,10 +71,22 @@ h1 {
 }
 
 h2 {
-  color: #fff !important;
+  background: linear-gradient(
+    330deg,
+    #6610f2 10%,
+    #18ffb7 30%,
+    #ff76d5 65%,
+    #6610f2 90%
+  );
+  -webkit-background-clip: text; /* Para navegadores baseados no Webkit */
+  -webkit-text-fill-color: transparent; /* Faz o preenchimento do texto transparente */
+  background-clip: text;
   font-size: 24px;
   font-weight: 400;
   margin-bottom: 20px;
+}
+h3 {
+  color: #fff !important;
 }
 
 h6 {
@@ -110,8 +128,8 @@ nav ul li a:hover {
   );
   color: #000 !important;
   border-radius: 24px;
-  backdrop-filter: blur(12px); /* Aumenta o blur no hover */
-  -webkit-backdrop-filter: blur(12px); /* Para WebKit */
+  backdrop-filter: blur(16px); /* Aumenta o blur no hover */
+  -webkit-backdrop-filter: blur(16px); /* Para WebKit */
 }
 
 main {
@@ -246,7 +264,7 @@ p {
   background: linear-gradient(
     330deg,
     #6610f2 10%,
-    #18ffb7 30%,
+    #18ffb7 40%,
     #ff76d5 65%,
     #6610f2 90%
   );
@@ -384,6 +402,10 @@ footer a:hover {
   color: #ddd;
 }
 
+.navbar-nav .nav-link {
+  color: #fff !important;
+}
+
 .circle {
   width: 298px;
   height: 298px;
@@ -402,11 +424,6 @@ footer a:hover {
   object-fit: cover; /* Garante que a imagem se adapte sem distorção */
 }
 
-.circle2 {
-  width: 384px !important;
-  height: 384px !important;
-}
-
 .linha-cab {
   margin-top: 2rem !important;
   align-items: center !important;
@@ -415,7 +432,7 @@ footer a:hover {
   padding: 0 !important;
 }
 
-@media (min-width: 230px) and (max-width: 1000px) {
+@media (min-width: 230px) and (max-width: 852px) {
   .box-perfil {
     margin-top: 4rem !important;
   }
@@ -426,5 +443,66 @@ footer a:hover {
 
   .text-sobre {
     width: 100% !important;
+  }
+
+  .box-btn-colorido-2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn-colorido-2 {
+    width: 234px !important;
+    padding: 0 !important;
+  }
+
+  .box-vamos {
+    text-align: center !important;
+  }
+
+  .box-projeto {
+    justify-content: center !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .btn-colorido-2 {
+    width: 234px !important;
+    margin: 0% !important;
+    justify-content: start;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  h1 {
+    font-size: 24px !important;
+  }
+  p {
+    font-size: 15px !important;
+  }
+
+  .btn-colorido-2 {
+    width: 234px !important;
+    padding: 0%;
+  }
+
+  .box-projeto {
+    justify-content: center !important;
+  }
+
+  .circle2 {
+    width: 384px !important;
+    height: 384px !important;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1999px) {
+  .btn-colorido-2 {
+    width: 274px !important;
+    margin: 0 !important;
+  }
+
+  .circle2 {
+    width: 384px !important;
+    height: 384px !important;
   }
 }

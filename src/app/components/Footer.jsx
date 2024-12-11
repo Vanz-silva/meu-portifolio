@@ -7,8 +7,14 @@ const Footer = () => (
         <div className="col-md-12 col-sm-12 pb-5">
           <ul>
             <li>
-              <a href="#">
-                <Icon.TelephoneFill size={24} className="ml-5" />
+              <a
+                href={`https://wa.me/5561991937866?text=${encodeURIComponent(
+                  "Olá, gostaria de saber mais sobre você!"
+                )}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Icon.Whatsapp size={24} className="ml-5" />
               </a>
             </li>
             <li>
@@ -17,7 +23,11 @@ const Footer = () => (
               </a>
             </li>
             <li>
-              <a href="#">
+              <a
+                href="https://github.com/Vanz-silva"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Icon.Github size={25} className="ml-5" />
               </a>
             </li>

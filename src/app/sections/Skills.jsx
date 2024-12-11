@@ -30,7 +30,7 @@ const Skills = () => {
     <section id="skills">
       <div className="container text-center logos-tec">
         <div className="row box-texto-logos text-center">
-          <h2>Skills</h2>
+          <h3>Skills</h3>
         </div>
 
         <Swiper
