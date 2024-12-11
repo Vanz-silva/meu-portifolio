@@ -402,8 +402,13 @@ footer a:hover {
   color: #ddd;
 }
 
-.navbar-nav .nav-link {
-  color: #fff !important;
+.navbar-toggler-icon {
+  background-image: -webkit-linear-gradient(
+    #6610f2 0%,
+    #ffd88d 30%,
+    #ff76d5 65%,
+    #6610f2 100%
+  ) !important;
 }
 
 .circle {
@@ -430,6 +435,10 @@ footer a:hover {
   display: flex !important;
   flex-direction: column !important;
   padding: 0 !important;
+}
+
+#offcanvasMenu {
+  background-color: black;
 }
 
 @media (min-width: 230px) and (max-width: 852px) {
