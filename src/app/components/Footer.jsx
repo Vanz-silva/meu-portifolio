@@ -2,6 +2,7 @@ import * as Icon from "react-bootstrap-icons";
 
 const Footer = () => (
   <footer>
+    <div className=" container-fluid Linha-footer">
     <div className="container-fluid pt-5 container-footer justify-content-center d-flex align-items-center">
       <div className="row ">
         <div className="col-md-12 col-sm-12 pb-5">
@@ -38,6 +39,7 @@ const Footer = () => (
           </p>
         </div>
       </div>
+    </div>
     </div>
   </footer>
 );

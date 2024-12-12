@@ -17,13 +17,18 @@ const About = () => (
         </div>
         {/* Segunda coluna */}
         <div className="col-md-5 justify-content-center d-flex box-perfil">
-          <div className="circle">
-            <img
-              src="/img/cyberVanz.png"
-              width="60%"
-              alt="Descrição da imagem"
-              className="img-fluid"
-            />
+          <div className="circle-wrapper">
+            <div className="circle-border border1"></div>
+            <div className="circle-border border2"></div>
+            <div className="circle-border border3"></div>
+            <div className="circle">
+              <img
+                src="/img/cyberVanz.png"
+                width="60%"
+                alt="Descrição da imagem"
+                className="img-fluid"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -34,11 +39,11 @@ const About = () => (
             <h5>
               Está buscando uma desenvolvedora front-end que transforme suas
               ideias em experiências digitais incríveis? Eu sou a pessoa certa!
-              Apaixonada por programação há dois anos, tenho expertise em HTML, CSS, JavaScript, React, Next.js, Python,
-              Material iu e Bootstrap crio interfaces web que combinam design
-              atraente e funcionalidade. Sempre em busca de inovação e desafios,
-              pensadas para proporcionar a melhor experiência para o usuário.
-              Vamos construir algo juntos?
+              Apaixonada por programação há dois anos, tenho expertise em HTML,
+              CSS, JavaScript, React, Next.js, Python, Material iu e Bootstrap
+              crio interfaces web que combinam design atraente e funcionalidade.
+              Sempre em busca de inovação e desafios, pensadas para proporcionar
+              a melhor experiência para o usuário. Vamos construir algo juntos?
             </h5>
           </div>
         </div>
