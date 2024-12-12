@@ -368,9 +368,6 @@ p {
   display: none !important;
 }
 
-.container-footer {
-  margin-top: 14%;
-}
 
 footer {
   background-color: transparent;
@@ -431,8 +428,8 @@ footer a:hover {
 }
 
 .circle-border {
-  width: 304px;
-  height: 304px;
+  width: 306px;
+  height: 306px;
   position: absolute;
   border-radius: 50%;
   background-color: transparent;
@@ -447,20 +444,14 @@ footer a:hover {
 }
 
 .border1 {
-  width: 330px;
-  height: 330px;
   animation-duration: 6s; /* Velocidade de rotação diferente */
 }
 
 .border2 {
-  width: 350px;
-  height: 350px;
   animation-duration: 8s; /* Velocidade diferente para criar o efeito */
 }
 
 .border3 {
-  width: 370px;
-  height: 370px;
   animation-duration: 10s;
 }
 
@@ -483,6 +474,31 @@ footer a:hover {
   object-fit: cover;
 }
 
+
+.gradient-line {
+  width: 100%;
+  height: 2px; /* Altura da linha */
+  background: linear-gradient(
+    330deg,
+    #6610f2 10%,
+    #18ffb7 40%,
+    #ff76d5 65%,
+    #6610f2 90%
+  );
+  background-size: 200% 100%; /* Maior tamanho para movimento */
+  animation: moveGradient 6s linear infinite; /* Animação contínua */
+}
+
+/* Animação do gradiente */
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
 /* Animação de rotação */
 @keyframes rotate {
   from {
@@ -494,7 +510,7 @@ footer a:hover {
 }
 
 .linha-cab {
-  margin-top: 2rem !important;
+  margin-top: 1rem !important;
   align-items: center !important;
   display: flex !important;
   flex-direction: column !important;
@@ -508,6 +524,14 @@ footer a:hover {
 @media (min-width: 230px) and (max-width: 852px) {
   .box-perfil {
     margin-top: 4rem !important;
+  }
+
+  .bt-1 {
+    width: 148px;
+  }
+
+  .bt-2 {
+    width: 148px;
   }
 
   #habilidades {

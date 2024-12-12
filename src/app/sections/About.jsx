@@ -16,7 +16,7 @@ const About = () => (
           <Button text="Vamos Conversar" />
         </div>
         {/* Segunda coluna */}
-        <div className="col-md-5 justify-content-center d-flex box-perfil">
+        <div className="col-md-5 pt-3 justify-content-center d-flex box-perfil">
           <div className="circle-wrapper">
             <div className="circle-border border1"></div>
             <div className="circle-border border2"></div>

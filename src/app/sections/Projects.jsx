@@ -113,7 +113,7 @@ const Projects = () => (
 
 
     
-    <div className="container-fluid pt-5 mt-5">
+    <div className="container-fluid pt-5 pb-5 mb-5 mt-5">
       <div className="row d-flex justify-content-center flex-colunm align-items-center">
         <div className="col-md-6 justify-content-center col-sm-12 d-flex">
           <div className="circle circle2">
