@@ -3,7 +3,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules"; // Importação correta para v11+
-import SkillCard from "../components/SkillCard";
+import SkillCard from "@/components/SkillCard";
 import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/pagination";

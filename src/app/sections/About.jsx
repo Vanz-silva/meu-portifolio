@@ -1,4 +1,4 @@
-import Button from "../components/Button";
+import Button from "@/components/Button";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const About = () => (
