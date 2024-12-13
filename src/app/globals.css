@@ -411,15 +411,6 @@ footer a:hover {
   );
 }
 
-.navbar-toggler-icon {
-  background-image: -webkit-linear-gradient(
-    #6610f2 0%,
-    #ffd88d 30%,
-    #ff76d5 65%,
-    #6610f2 100%
-  ) !important;
-}
-
 .circle-wrapper {
   position: relative;
   display: flex;
@@ -428,8 +419,8 @@ footer a:hover {
 }
 
 .circle-border {
-  width: 306px;
-  height: 306px;
+  width: 305px;
+  height: 305px;
   position: absolute;
   border-radius: 50%;
   background-color: transparent;
@@ -563,6 +554,10 @@ footer a:hover {
   header {
     display: flex;
     justify-content: start !important;
+  }
+
+  .linha-cab {
+    margin: 0;
   }
 }
 

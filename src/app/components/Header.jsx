@@ -11,7 +11,7 @@ function Header() {
 
   return (
     <header>
-      <nav className="navbar navbar-expand-lg">
+      <nav className="navbar navbar-expand-lg" data-bs-theme="dark">
         {/* Botão de menu hamburguer */}
         <button
           className="navbar-toggler d-lg-none"
